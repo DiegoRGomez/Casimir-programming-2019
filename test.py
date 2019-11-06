@@ -30,8 +30,9 @@ def PlotCircle(r):
             axes.spines['right'].set_color('none')
             axes.spines['top'].set_color('none')
             plt.gca().set_aspect('equal', adjustable='box')
-	    #Save to .png:
-	    plt.savefig("CirleRadius" + str(r) + ".png")
+            #Save to .png:
+            plt.savefig("CirleRadius" + str(r) + ".png")
+        
 
 def AreaTriangle(b,h):
-	return b*h/2
+    return b*h/2
