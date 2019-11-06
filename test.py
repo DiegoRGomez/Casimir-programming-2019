@@ -25,7 +25,13 @@ def PlotCircle(r):
 	#Save to .png:
 	plt.savefig("CirleRadius" + str(r) + ".png")
 
+def AreaTriangle(b,h):
+	return b*h/2
 
+
+#b=4
+#h=5
+#print(AreaTriangle(b,h))
 #r=3
 #PlotCircle(r)
 #print(Area(r))
