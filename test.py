@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 #print("Hello world!")
 
 def Circ(r):
+	"""
+	Calculates circumference of circle with radius r
+	"""
 	C = 2*np.pi*r
 	return C
 
