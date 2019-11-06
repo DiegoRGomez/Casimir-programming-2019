@@ -17,13 +17,19 @@ def Area(r):
 	return A
 
 def PlotCircle(r):
-	theta = np.linspace(0, 2*np.pi, num=1E3)
-	x = r*np.cos(theta)
-	y = r*np.sin(theta)
-	fig, axes = plt.subplots()
-	axes.plot(x, y)
-    
-
+        with plt.style.context('bmh'):
+            theta = np.linspace(0, 2*np.pi, num=1E3)
+            x = r*np.cos(theta)
+            y = r*np.sin(theta)
+            fig, axes = plt.subplots()
+            plt.ylim(-r-.2*r, r+.2*r)
+            plt.xlim(-r-.2*r, r+.2*r)
+            axes.plot(x, y)
+            axes.spines['left'].set_position('center')
+            axes.spines['bottom'].set_position('center')
+            axes.spines['right'].set_color('none')
+            axes.spines['top'].set_color('none')
+            plt.gca().set_aspect('equal', adjustable='box')
 #r=3
 #PlotCircle(r)
 #print(Area(r))
