@@ -1,7 +1,7 @@
 import test
 #print("Hola!!")
 
-r = 14
+r = 25
 
 print(test.Circ(r))
 print(test.Area(r))
