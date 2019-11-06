@@ -8,7 +8,6 @@ def Circ(r):
 	This function calculates the circumference of the circle, where r is the radius of the circle. hkfjahkjlfadavVDF 
 	this is just in case you are writting the same thing and we wouldn't be able to discriminate the two version. 
 	"""
-
 	C = 2*np.pi*r
 	return C
 
