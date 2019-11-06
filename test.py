@@ -22,7 +22,9 @@ def PlotCircle(r):
 	y = r*np.sin(theta)
 	fig, axes = plt.subplots()
 	axes.plot(x, y)
-    
+	#Save to .png:
+	plt.savefig("CirleRadius" + str(r) + ".png")
+
 
 #r=3
 #PlotCircle(r)
