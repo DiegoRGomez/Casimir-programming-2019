@@ -5,5 +5,11 @@ import numpy as np
 def Circ(r):
 	C = 2*np.pi*r
 	return C
+
+
+def Area(r):
+	A = np.pi*r**2
+	return A
+
 #r=3
-#print(Circ(r))
+#print(Area(r))
